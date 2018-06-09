@@ -2360,3 +2360,16 @@ fieldset[disabled] .s-btn {
 .s-swiper__pagination-v1--dark .swiper-pagination-bullet-active {
   background: #13b1cd;
 }
+.main-menu{
+  position: absolute;
+  z-index:999;
+  background-color: transparent;
+  background: rgba(25,25,25,0.6)
+}
+.main-menu.js__header-sticky{
+  position:relative;
+  z-index:999;
+  background-color: transparent;
+  background: rgba(25,25,25,0.6)
+}
+
