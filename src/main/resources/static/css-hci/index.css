@@ -16,7 +16,7 @@ body {
 
 /*导航栏*/
 header {
-    height: 18px;
+    height: 16px;
 }
 
 .logo{
@@ -112,7 +112,7 @@ header {
 }
 
 .search input:focus {
-    width: 300px;
+    width: 250px;
     z-index: 1;
     border-bottom: 2px solid white;
 }
@@ -123,15 +123,15 @@ header {
     height: 50px;
     width: 50px;
     position: absolute;
-    top: 0;
     right: 0;
+    bottom: 0;
     cursor: pointer;
 }
 
 .search button:before {
     content: "\f002";
     font-family: FontAwesome, serif;
-    font-size: 16px;
+    font-size: 20px;
     color: #F9F0DA;
 }
 
