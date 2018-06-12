@@ -10,7 +10,6 @@
 }
 
 body {
-    /*background-color: #f2e6ce;*/
     background: url("http://img.dpm.org.cn/Public/static/themes/image/bo/temporary5-bg1.jpg") repeat;
     font-family: 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
 }
@@ -94,14 +93,13 @@ header {
  */
 .search {
     background: #B46381;
-    right: 150px;
     color: antiquewhite;
 }
 
 .search input {
-    height: 100%;
+    height: 90%;
     width: 0;
-    padding: 0 35px 0 15px;
+    padding: 0 10px;
     border: none;
     border-bottom: 2px solid transparent;
     outline: none;
@@ -122,8 +120,8 @@ header {
 .search button {
     background-color: transparent;
     border: none;
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     position: absolute;
     top: 0;
     right: 0;
@@ -132,7 +130,7 @@ header {
 
 .search button:before {
     content: "\f002";
-    font-family: FontAwesome;
+    font-family: FontAwesome, serif;
     font-size: 16px;
     color: #F9F0DA;
 }
