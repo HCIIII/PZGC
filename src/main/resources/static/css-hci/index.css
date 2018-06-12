@@ -17,7 +17,6 @@ body {
 
 /*导航栏*/
 header {
-
     height: 18px;
 }
 
@@ -136,6 +135,19 @@ header {
     font-family: FontAwesome;
     font-size: 16px;
     color: #F9F0DA;
+}
+
+input::-webkit-input-placeholder {
+    color: #ddd;
+}
+input:-ms-input-placeholder { // IE10+
+color: #ddd;
+}
+input:-moz-placeholder { // Firefox4-18
+color: #ddd;
+}
+input::-moz-placeholder { // Firefox19+
+color: #ddd;
 }
 
 /**
