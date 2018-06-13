@@ -39,57 +39,46 @@
     <!-- Import Custom News Page Styles -->
     <link href="assets/css/style-for-news-page.css" rel="stylesheet">
 
-    <!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery.min.js"></script>
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
-    <link href="css/style-lee.css" rel="stylesheet">
+    <link href="css-hci/news.css" rel="stylesheet">
 </head>
-<body class="header-fixed-top">
-
-<div id="page-top" class="page-top"></div><!-- /.page-top -->
-
+<body>
 
 <header id="header" class="bak">
-    <div class="wrap">
-        <div class="logo" style="margin-left: -28px">
-            <a href="/"><img src="images/logo.jpg"style="height:40px;width:40px" alt="蓬洲古城"></a>
+    <div class="wrap" style="margin-left: 0;">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="蓬洲古城"></a>
         </div>
-        <div class="header-text">	蓬洲古城</div>
-
+        <a href="index.html"><div class="header-text">蓬洲古城</div></a>
         <div class="menu-row">
             <ul class="menu-list">
                 <li>
-                    <a href="index.html" style="font-weight:200">主页</a>
+                    <a href="index.html">主页</a>
                 </li>
                 <li class="">
-                    <a href="tour.html" style="font-weight:200">导览</a>
+                    <a href="tour.html">导览</a>
                 </li>
                 <li>
-                    <a href="portfolio.html" style="font-weight:200">影像</a>
+                    <a href="portfolio.html">影像</a>
                 </li>
                 <li>
-                    <a href="news.html" style="font-weight:200">见闻</a>
+                    <a href="news.html">见闻</a>
                 </li>
                 <li>
-                    <a href="about.html" style="font-weight:200">关于</a>
+                    <a href="about.html">关于</a>
                 </li>
                 <li>
-                    <a href="contact.html" style="font-weight:200">联系</a>
+                    <a href="contact.html">联系</a>
                 </li>
-
             </ul>
         </div>
         <div class="search">
-            <form role="search" class="search-form" action="#" method="get">
-                <input class="search-field" type="text" name="s" id="s" placeholder="输入你想搜索的内容"></input>
-                <button class="search-btn" type="submit"></button>
+            <form>
+                <input type="text" placeholder="探索你的蓬城。">
+                <button type="submit"></button>
             </form>
-
-
         </div>
     </div>
 </header>
@@ -750,12 +739,6 @@
 </footer>
 
 
-<div id="scroll-to-top" class="scroll-to-top">
-  <span>
-    <i class="fa fa-chevron-up"></i>    
-  </span>
-</div><!-- /#scroll-to-top -->
-
 
 <!-- Include modernizr-2.8.3.min.js -->
 <script src="assets/js/modernizr-2.8.3.min.js"></script>
@@ -780,62 +763,6 @@
 
 <script type="text/javascript" src="assets/js/jquery.ajaxchimp.min.js"></script>
 
-<script>
-
-    $(document).ready(function () {
-
-        /* -------- One page Navigation ----------*/
-        $('#main-menu #menu').onePageNav({
-            currentClass: 'active',
-            changeHash: false,
-            scrollSpeed: 1500,
-            scrollThreshold: 0.5,
-            scrollOffset: 95,
-            filter: ':not(.sub-menu a, .not-in-home)',
-            easing: 'swing'
-        });
-
-
-        /*----------- Google Map - with support of gmaps.js ----------------*/
-
-        function isMobile() {
-            return ('ontouchstart' in document.documentElement);
-        }
-
-        function init_gmap() {
-            if (typeof google == 'undefined') return;
-            var options = {
-                center: [-37.817331, 144.955652],
-                zoom: 15,
-                mapTypeControl: true,
-                mapTypeControlOptions: {
-                    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-                },
-                navigationControl: true,
-                scrollwheel: false,
-                streetViewControl: true
-            }
-
-            if (isMobile()) {
-                options.draggable = false;
-            }
-
-            $('#googleMaps').gmap3({
-                map: {
-                    options: options
-                },
-                marker: {
-                    latLng: [-37.817331, 144.955652],
-                    options: {icon: 'images/mapicon.png'}
-                }
-            });
-        }
-
-        init_gmap();
-    });
-
-
-</script>
 
 </body>
 </html>

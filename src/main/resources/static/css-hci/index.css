@@ -84,6 +84,7 @@ header {
 .menu-list li a{
     font-family: 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
     text-decoration:none;
+    font-size: 14px;
     color: antiquewhite;
     margin-left:50px;
 }
@@ -94,50 +95,53 @@ header {
 .search {
     background: #B46381;
     color: antiquewhite;
+    font-size: 14px;
+}
+
+.search input, .search button {
+    outline: none;
+    background: transparent;
 }
 
 .search input {
-    height: 90%;
-    width: 0;
+    width: 12%;
+    height: 70%;
     padding: 0 10px;
     border: none;
-    border-bottom: 2px solid transparent;
-    outline: none;
+    border-bottom: 1px solid transparent;
     background: transparent;
-    transition: .4s cubic-bezier(0, 0.8, 0, 1);
     position: absolute;
-    top: 0;
     right: 0;
-    z-index: 2;
-}
-
-.search input:focus {
-    width: 250px;
-    z-index: 1;
-    border-bottom: 2px solid white;
+    bottom: 6px;
 }
 
 .search button {
-    background-color: transparent;
     border: none;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     position: absolute;
-    right: 0;
     bottom: 0;
+    right: 0;
     cursor: pointer;
 }
 
 .search button:before {
     content: "\f002";
-    font-family: FontAwesome, serif;
-    font-size: 20px;
-    color: #F9F0DA;
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: antiquewhite;
 }
+
+.search input:focus {
+    border-color: antiquewhite;
+    transition: 1s;
+}
+
 
 input::-webkit-input-placeholder {
     color: #ddd;
 }
+
 input:-ms-input-placeholder { // IE10+
 color: #ddd;
 }
