@@ -151,6 +151,111 @@ input::-moz-placeholder { // Firefox19+
 color: #666;
 }
 
+.section-title {
+    text-align: center;
+    margin: 60px auto 0;
+    width: 886px;
+}
+
+.section-title h1 span {
+    font-size: 33px;
+    color: black;
+    font-family: '方正清刻本悦宋简体', 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+}
+
+.section-title p {
+    text-align: center;
+    font-family: 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+}
+
+.title_icon {
+    max-height: 30px;
+}
+
+p {
+    text-align: left;
+}
+
+/**
+ *   视频下方所有内容
+ */
+
+h1 {
+    font-size: 33px;
+    font-family: '方正清刻本悦宋简体', 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+}
+
+.section-title {
+    text-align: center;
+    margin: 60px auto 0;
+    width: 886px;
+}
+
+.section-title h1 {
+    font-size: 33px;
+    font-family: '方正清刻本悦宋简体', 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+}
+
+.section-title p {
+    text-align: center;
+    font-family: 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+}
+
+.title_icon {
+    max-height: 30px;
+}
+
+p {
+    text-align: left;
+}
+
+.show-item {
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+}
+
+.show-item .image, .show-item .text {
+    width: 50%;
+    float: left;
+    margin: 0 20px;
+    font-family: 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+}
+
+
+.show-item .text .title2 {
+    font-family: '方正清刻本悦宋简体', 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+    font-size: 27px;
+}
+
+.show-portfolio {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+
+div.img {
+    margin: 5px;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+
+div.img:hover {
+
+}
+
+div.img img {
+    width: 300px;
+    height: 200px;
+}
+
+div.desc {
+    font-size: 14px;
+    font-family: 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+    padding: 5px;
+    text-align: center;
+}
 
 /* 页脚 */
 .show-footer {
