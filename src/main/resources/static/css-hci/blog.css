@@ -1,0 +1,188 @@
+/*字体导入*/
+@font-face {
+    font-family: "方正清刻本悦宋简体";
+    src: url('../assets/fonts/fangzhengqingke.ttf')
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url("../assets/fonts/fontawesome-webfont.ttf");
+}
+
+body {
+    background: url("http://img.dpm.org.cn/Public/static/themes/image/bo/temporary5-bg1.jpg") repeat;
+    font-family: 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+}
+
+/*导航栏*/
+header {
+    height: 16px;
+    border-bottom: 1px solid lightgray;
+}
+
+.logo{
+    float:left;
+    margin: 10px 10px 10px 60px;
+    color:white;
+    text-align:center;
+}
+
+.logo a img {
+    height: 25px;
+    width: 25px;
+}
+
+.header-text{
+    font-size: 16px;
+    font-weight:200;
+    margin-top:12px;
+    margin-right:100px;
+    float:left;
+    color: black;
+    font-family: '方正清刻本悦宋简体', 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+}
+
+.menu-row{
+    float:left;
+    margin-top:13px;
+}
+
+.bak {
+    position: relative;
+    background: white;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    margin: 0 auto;
+    z-index: 12;
+}
+
+.bak header.sticky {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    -webkit-animation-duration: 0.45s;
+    -moz-animation-duration: 0.45s;
+    -ms-animation-duration: 0.45s;
+    -o-animation-duration: 0.45s;
+    animation-duration: 0.45s;
+}
+
+.menu-list li {
+    float:left;
+    text-align:center;
+    font-size: 12px;
+    list-style-type:none;
+    margin: 2px 7px;
+    font-weight:200;
+
+}
+
+.menu-list li a{
+    font-family: 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+    font-size: 14px;
+    text-decoration:none;
+    color: black;
+    margin-left:50px;
+}
+
+/**
+ *  搜索框
+ */
+.search {
+    background: #B46381;
+    color: black;
+    font-size: 14px;
+}
+
+.search input, .search button {
+    outline: none;
+    background: transparent;
+}
+
+.search input {
+    width: 12%;
+    height: 70%;
+    padding: 0 10px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+}
+
+.search button {
+    border: none;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.search button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: black;
+}
+
+.search input:focus {
+    border-color: lightslategray;
+    transition: 1s;
+}
+
+input::-webkit-input-placeholder {
+    color: #666;
+}
+input:-ms-input-placeholder { // IE10+
+color: #666;
+}
+input:-moz-placeholder { // Firefox4-18
+color: #666;
+}
+input::-moz-placeholder { // Firefox19+
+color: #666;
+}
+
+.section-title {
+    text-align: center;
+    margin: 60px auto 0;
+    width: 886px;
+}
+
+.section-title h1 span {
+    font-size: 33px;
+    color: black;
+    font-family: '方正清刻本悦宋简体', 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+}
+
+.section-title p {
+    text-align: center;
+    font-family: 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+}
+
+.title_icon {
+    max-height: 30px;
+}
+
+p {
+    text-align: left;
+}
+
+/* 页脚 */
+.show-footer {
+    left: 10%;
+    position: relative;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ce8483;
+}
