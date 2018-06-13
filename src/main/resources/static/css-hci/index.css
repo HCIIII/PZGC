@@ -168,7 +168,7 @@ color: #ddd;
 
 .section-title p {
     text-align: center;
-    font-family: '方正清刻本悦宋简体', 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
+    font-family: 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
 }
 
 .title_icon {
@@ -181,7 +181,7 @@ p {
 
 .show-item {
     width: 60%;
-    margin: 40px auto;
+    margin: 30px auto;
     display: flex;
 }
 
@@ -202,14 +202,13 @@ p {
     display: flex;
     position: relative;
     margin: 0 auto;
-    width: 83%;
+    width: 80%;
 }
 
 div.img {
     margin: 5px;
     border-bottom: 1px solid #ccc;
     float: left;
-    width: 25%;
 }
 
 div.img:hover {
@@ -217,8 +216,8 @@ div.img:hover {
 }
 
 div.img img {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 200px;
 }
 
 div.desc {
