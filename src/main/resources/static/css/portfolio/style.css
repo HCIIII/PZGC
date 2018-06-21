@@ -1,0 +1,103 @@
+.da-thumbs{
+	MARGIN: 30px 0px 2px; WIDTH: 960px; POSITION: relative; HEIGHT: 354px
+}
+.da-thumbs .a2 {
+	LEFT: 120px; OVERFLOW: hidden; WIDTH: 220px; POSITION: absolute; TOP: 0px; HEIGHT: 165px
+}
+.da-thumbs .a3 {
+	LEFT: 120px; OVERFLOW: hidden; WIDTH: 220px; POSITION: absolute; TOP: 0px; HEIGHT: 165px
+}
+.da-thumbs .a4 {
+	LEFT: 120px; OVERFLOW: hidden; WIDTH: 220px; POSITION: absolute; TOP: 0px; HEIGHT: 165px
+}
+.da-thumbs .a5 {
+	LEFT: 120px; OVERFLOW: hidden; WIDTH: 220px; POSITION: absolute; TOP: 0px; HEIGHT: 165px
+}
+.da-thumbs .a6 {
+	LEFT: 120px; OVERFLOW: hidden; WIDTH: 220px; POSITION: absolute; TOP: 0px; HEIGHT: 165px
+}
+.da-thumbs .a7 {
+	LEFT: 120px; OVERFLOW: hidden; WIDTH: 220px; POSITION: absolute; TOP: 0px; HEIGHT: 165px
+}
+.da-thumbs .a8 {
+	LEFT: 120px; OVERFLOW: hidden; WIDTH: 220px; POSITION: absolute; TOP: 0px; HEIGHT: 165px
+}
+.da-thumbs .a9 {
+	LEFT: 120px; OVERFLOW: hidden; WIDTH: 220px; POSITION: absolute; TOP: 0px; HEIGHT: 165px
+}
+
+.da-thumbs .a2 {
+	WIDTH: 464px; HEIGHT: 348px
+}
+.da-thumbs .a3 {
+	LEFT: 120px; TOP: 366px
+}
+.da-thumbs .a4 {
+	LEFT: 380px; TOP: 366px
+}
+.da-thumbs .a5 {
+	LEFT: 623px; TOP: 0px
+}
+.da-thumbs .a6 {
+	LEFT: 881px; TOP: 0px
+}
+.da-thumbs .a7 {
+	LEFT: 623px; TOP: 180px
+}
+.da-thumbs .a8 {
+	LEFT: 881px; TOP: 180px
+}
+.da-thumbs .a9 {
+	LEFT: 640px; WIDTH: 464px;HEIGHT: 165px; TOP: 366px
+}
+
+
+
+/*-----------------------------------*/
+.da-thumbs {
+	list-style: none;
+	width: 984px;
+	height: 600px;
+	position: relative;
+	margin: 20px auto;
+	padding: 0;
+}
+.da-thumbs li {
+	float: left;
+	margin: 5px;
+	background: #fff;
+	padding: 8px;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.da-thumbs li a,
+.da-thumbs li a img {
+	display: block;
+	position: relative;
+}
+.da-thumbs li a {
+	overflow: hidden;
+}
+.da-thumbs li a div {
+	position: absolute;
+	background: #333;
+	background: rgba(75,75,75,0.7);
+	width: 100%;
+	height: 100%;
+}
+.da-thumbs li a div span {
+
+	display: block;
+	padding: 10px 0;
+        position: absolute;
+	bottom:20px;
+	margin-left:20px;
+	margin-right:20px;
+	
+	text-transform: uppercase;
+	font-weight: normal;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border-bottom: 10px solid rgba(255,255,255,0.5);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+}
