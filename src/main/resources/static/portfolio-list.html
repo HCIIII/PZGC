@@ -68,6 +68,9 @@
 <div class="dropdown" style="z-index:999">
     <button class="dropbtn">影像主题</button>
     <div class="dropdown-content">
+        <li class="btn"  onclick="getlist(0)"
+
+            data-filter="0"> 全部影像</li>
         <li class="btn"  onclick="getlist(1)"
 
             data-filter="1"> 陈氏宗祠</li>
@@ -1128,7 +1131,22 @@
             <!-- End Masonry Grid -->
     </ul>
 </div>
+<div class="show-footer">
+    &copy; 长乡思 2017 - 蓬洲古城
+</div>
 <script type="text/javascript">
+    $(function () {
+        $("li").click(function() {
+            //          第一种方法
+            //          $("li").removeClass("active");//删除指定的 class 属性
+            //          $(this).addClass("active");//向被选元素添加一个或多个类
+            // $(this).toggleClass("active");//该函数会对被选元素进行添加/删除类的切换操作
+            var text = $(this).text();//获取当前选中的文本
+            //或者使用第二种方法
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+
+    })
     function getlist(num){
         var con=document.getElementsByTagName("li");
 
@@ -1140,20 +1158,20 @@
                 con[i].style="display:none";
             }
         }
+        if(num!=0) {
+            for (var i = 0; i < con.length; i++) {
+                var text = con[i].getAttribute("data-category");
 
-        for (var i=0; i< con.length;i++){
-            var text=con[i].getAttribute("data-category");
-
-            if(text==num)
-            {
-                con[i].style="margin-left:30px";
+                if (text == num) {
+                    con[i].style = "margin-left:30px";
+                }
             }
         }
+        else
+            for (var i = 0; i < con.length; i++) {
+                con[i].style="margin-left:30px";
+            }
     }	</script>
-
-<div class="show-footer">
-    &copy; 长乡思 2017 - 蓬洲古城
-</div>
 <script>
     $(function() {
 
@@ -1162,8 +1180,29 @@
             inverse : true //
         }); } );
 
+        //分类
+        var url = location.search;
+        if (url.indexOf("?") != -1) {
+            var num = url.substr(1);
+            if(num!='0'){
+                getlist(num);
+            }
+            else {
+                var con=document.getElementsByTagName("li");
+                for (var i = 0; i < con.length; i++) {
+                    con[i].style="margin-left:30px";
+                }
+            }
+
+        }
+
+
+
     });
 </script>
+
+
+
 
 </body>
 </html>
