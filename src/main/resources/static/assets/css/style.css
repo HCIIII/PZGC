@@ -740,6 +740,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
 .entry-title a {

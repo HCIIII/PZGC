@@ -186,3 +186,8 @@ p {
     padding-top: 20px;
     border-top: 1px solid #ce8483;
 }
+
+
+.blog-post-singgle-page .img-responsive {
+    width: 100%;
+}
