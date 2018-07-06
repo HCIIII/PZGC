@@ -24,6 +24,8 @@
     <LINK href="css/portfolio/style.css" type=text/css rel=stylesheet>
     <LINK href="css/portfolio/lrtk.css" type=text/css rel=stylesheet>
 
+    <!-- Bootstrap  -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <script src="css/portfolio/jquery.min.js"></script>
     <script src="css/portfolio/modernizr.custom.97074.js"></script>
     <script src="css/portfolio/jquery.hoverdir.js"></script>
@@ -35,7 +37,9 @@
         <div class="logo">
             <a href="index.html"><img src="images/logo.jpg" alt="蓬洲古城"></a>
         </div>
-        <a href="index.html"><div class="header-text">蓬洲古城</div></a>
+        <a href="index.html">
+            <div class="header-text">蓬洲古城</div>
+        </a>
         <div class="menu-row">
             <ul class="menu-list">
                 <li>
@@ -66,77 +70,77 @@
         </div>
     </div>
 </header>
-<img src="images/yingxiang1.PNG" style=""alt="header">
-<div class="container">
-    <ul  id="da-thumbs" class="da-thumbs" style="margin-top:-10px;margin-left:20px">
-        <li class=a2>
-            <a href="http://localhost:8080/portfolio-list.html?1">
-                <img
-                        src="images/yingxiang/7.15 翁万达宗祠 大厅正面（近）（陈婉儿）.jpg" style="width:464px;height:348px"/>
-                <div><span>陈氏宗祠</span></div>
-            </a>
-        </li>
-        <LI class=a3>
-            <a href="portfolio-list.html?2">
-                <IMG
-                        src="images/yingxiang/7.20 太和善堂鮀江分社2（林志和）.jpg" style="width:220px;height:165px">
-                <div><span>太和善堂</span></div>
-            </a>
-        </LI>
-        <LI class=a4>
-            <a href="portfolio-list.html?3">
-                <IMG
-                        src="images/yingxiang/7.20 谢氏宗祠1（林志和）.jpg" style="width:220px;height:165px">
-                <div><span>谢氏宗祠</span></div>
-            </a>
-        </LI>
-        <LI class=a5>
-            <a href="portfolio-list.html?4">
-                <IMG
-                        src="images/yingxiang/7.20 太和善堂鮀江分社1（林志和）.jpg" style="width:220px;height:165px">
-                <div><span>太和善堂</span></div>
-            </a>
-        </LI>
-        <LI class=a6>
-            <a href="portfolio-list.html?5">
-                <IMG
-                        src="images/yingxiang/7.24 吴荣美内2（林志和）.jpg" style="width:220px;height:165px">
-                <div><span>吴荣美内</span></div>
-            </a>
-        </LI>
-        <LI class=a7>
-            <a href="portfolio-list.html?6">
-                <IMG
-                        src="images/yingxiang/7.24 西门巷陈氏大夫第1（林志和）.jpg" style="width:220px;height:165px">
-                <div><span>西门巷</span></div>
-            </a>
-        </LI>
-        <LI class=a8>
-            <a href="portfolio-list.html?7">
-                <IMG
-                        src="images/yingxiang/7.20 长庆庵（林志和）.jpg" style="width:220px;height:165px">
-                <div><span>长庆庵</span></div>
-            </a>
-        </LI>
-        <LI class=a9>
-            <a href="portfolio-list.html?0">
-                <IMG
-                        src="images/yingxiang/7.24 吴荣美内1（林志和）.jpg" style="width:464px;height:165px">
-                <div><span>全部影像</span></div>
-            </a>
-        </LI>
-    </ul>
-</div>
-<div class="show-footer">
-    &copy; 2017-2018  长乡思 - 蓬洲古城
-</div>
-<script>
-    $(function() {
 
-        $(' #da-thumbs > li ').each( function() { $(this).hoverdir({
-            hoverDelay : 150, //
-            inverse : true //
-        }); } );
+<img src="images/yingxiang1.PNG" style="padding: 20px 0" alt="header">
+
+<div class="container">
+    <div class="col-md-12"  style="padding-bottom: 50px;">
+        <ul id="da-thumbs" class="col-md-12 da-thumbs">
+            <li class="a2">
+                <a href="http://localhost:8080/portfolio-list.html?1">
+                    <img src="images/yingxiang/7.15 翁万达宗祠 大厅正面（近）（陈婉儿）.jpg"/>
+                    <div><span>陈氏宗祠</span></div>
+                </a>
+            </li>
+            <LI class="a3">
+                <a href="portfolio-list.html?2">
+                    <IMG src="images/yingxiang/7.20 太和善堂鮀江分社2（林志和）.jpg"/>
+                    <div><span>太和善堂</span></div>
+                </a>
+            </LI>
+            <LI class="a4">
+                <a href="portfolio-list.html?3">
+                    <IMG src="images/yingxiang/7.20 谢氏宗祠1（林志和）.jpg"/>
+                    <div><span>谢氏宗祠</span></div>
+                </a>
+            </LI>
+            <LI class="a5">
+                <a href="portfolio-list.html?4">
+                    <IMG src="images/yingxiang/7.20 太和善堂鮀江分社1（林志和）.jpg"/>
+                    <div><span>太和善堂</span></div>
+                </a>
+            </LI>
+            <LI class="a6">
+                <a href="portfolio-list.html?5">
+                    <IMG src="images/yingxiang/7.24 吴荣美内2（林志和）.jpg"/>
+                    <div><span>吴荣美内</span></div>
+                </a>
+            </LI>
+            <LI class="a7">
+                <a href="portfolio-list.html?6">
+                    <IMG src="images/yingxiang/7.24 西门巷陈氏大夫第1（林志和）.jpg"/>
+                    <div><span>西门巷</span></div>
+                </a>
+            </LI>
+            <LI class="a8">
+                <a href="portfolio-list.html?7">
+                    <IMG src="images/yingxiang/7.20 长庆庵（林志和）.jpg"/>
+                    <div><span>长庆庵</span></div>
+                </a>
+            </LI>
+            <LI class="a9">
+                <a href="portfolio-list.html?0">
+                    <IMG src="images/yingxiang/7.24 吴荣美内1（林志和）.jpg"/>
+                    <div><span>全部影像</span></div>
+                </a>
+            </LI>
+        </ul>
+    </div>
+</div>
+
+<div class="show-footer">
+    &copy; 2017-2018 长乡思 - 蓬洲古城
+</div>
+
+<script>
+    $(function () {
+
+        $(' #da-thumbs > li ').each(function () {
+            $(this).hoverdir({
+                hoverDelay: 150, //
+                inverse: true //
+            });
+        });
 
     });
 </script>
