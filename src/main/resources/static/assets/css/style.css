@@ -838,16 +838,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .message-details .btn,
 .subscribe-section .btn {
-    background-color: #3498db;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    color: #ffffff;
+    color: #9f7b4b;
     font-size: .875em;
     font-weight: 800;
     width: 40%;
     padding: 12px 16px;
     margin-top: 20px;
     text-transform: uppercase;
+    background-color: #ffffff;
+    background-image: url("../images/b4.png");
+    background-size: 100% 100%;
 
     -webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
@@ -859,7 +859,6 @@ h1, h2, h3, h4, h5, h6 {
 .message-details .btn:hover,
 .subscribe-section .btn:hover {
     background-color: #ffffff;
-    border-color: #3498db;
     color: #3498db;
 }
 
@@ -1329,20 +1328,19 @@ footer a {
 
 /*-------------- custom --------------*/
 .custom-btn{
-    background-color: #3498db;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    color: #ffffff;
+    color: #9f7b4b;
     font-size: .75em;
     font-weight: 800;
     margin-top: 15px;
     padding: 10px 15px;
     text-transform: uppercase;
+    background-color: #ffffff;
+    background-image: url("../images/b4.png");
+    background-size: 100% 100%;
 }
 
 .custom-btn:hover{
     background-color: #ffffff;
-    border-color: #3498db;
     color: #3498db;
 }
 
