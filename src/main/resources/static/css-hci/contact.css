@@ -267,3 +267,20 @@ div.desc {
     padding-top: 20px;
     border-top: 1px solid #ce8483;
 }
+
+.contact .success-info{
+    background-image: url("../images/contact/f071d55e4628e363d4b0049a22162c87.png");
+    background-size: 100% 100%;
+}
+
+.contact .success-info .tip{
+    font-size: larger;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    color: #869093;
+}
+
+.contact .success-info .text{
+    padding-bottom: 120px;
+    color: #869093;
+}

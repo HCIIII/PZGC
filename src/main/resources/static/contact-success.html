@@ -49,7 +49,9 @@
         <div class="logo">
             <a href="index.html"><img src="images/logo.jpg" alt="蓬洲古城"></a>
         </div>
-        <a href="index.html"><div class="header-text">蓬洲古城</div></a>
+        <a href="index.html">
+            <div class="header-text">蓬洲古城</div>
+        </a>
         <div class="menu-row">
             <ul class="menu-list">
                 <li>
@@ -86,31 +88,21 @@
     <div class="contact-area">
         <div id="message-details" class="message-details">
             <div class="container">
-                <form action="contact-success.html" method="post" id="myForm" class="message-form">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 text-center">
-                            <input id="author" class="form-control" name="author" type="text" value="" size="30"
-                                   aria-required="true" placeholder="名称*" title="名称" required>
-                            <input id="email" class="form-control" name="email" type="email" value="" size="30"
-                                   aria-required="true" placeholder="邮箱*" title="邮箱" required>
-                            <input id="subject" class="form-control" name="subject" type="subject" value="" size="30"
-                                   aria-required="true" placeholder="主题*" title="主题" required>
-                            <textarea id="message" class="form-control" name="message" cols="45" rows="16"
-                                      aria-required="true" placeholder="内容" title="内容" required></textarea>
-                            <button name="submit" class="btn btn-lg" type="submit" id="submit">提交
-                            </button>
-                        </div>
-                    </div><!-- /.row -->
-                </form><!-- /#commentform -->
+                <div class="col-md-6 col-md-offset-3 text-center" style="padding: 40px 0;">
+                    <div class="success-info">
+                        <div class="tip">
+                            提交成功</div>
+                        <div class="text">恭喜您！您的反馈已提交成功，非常感谢您的意见与建议。</div>
+                    </div>
+                </div>
             </div><!-- /.container -->
         </div><!-- /.message-details -->
     </div><!-- /.contact-area -->
 </section><!-- /#contact -->
 
 <div class="show-footer">
-    &copy; 2017-2018  长乡思 - 蓬洲古城
+    &copy; 2017-2018 长乡思 - 蓬洲古城
 </div><!-- /#footer-bottom -->
-
 
 <!-- Include modernizr-2.8.3.min.js -->
 <script src="assets/js/modernizr-2.8.3.min.js"></script>
