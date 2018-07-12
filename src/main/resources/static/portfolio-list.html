@@ -18,10 +18,11 @@
     <LINK href="css/portfolio/styles.css" type=text/css rel=stylesheet>
     <LINK href="css/portfolio/lrtk.css" type=text/css rel=stylesheet>
     <link href="css-hci/portfolio.css" rel="stylesheet">
+    <!-- Bootstrap  -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <script src="css/portfolio/jquery.min.js"></script>
     <script src="css/portfolio/modernizr.custom.97074.js"></script>
     <script src="css/portfolio/jquery.hoverdir.js"></script>
-   
     <script src="css/portfolio/intense.js"></script>
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
 
@@ -33,7 +34,9 @@
         <div class="logo">
             <a href="index.html"><img src="images/logo.jpg" alt="蓬洲古城"></a>
         </div>
-        <a href="index.html"><div class="header-text">蓬洲古城</div></a>
+        <a href="index.html">
+            <div class="header-text">蓬洲古城</div>
+        </a>
         <div class="menu-row">
             <ul class="menu-list">
                 <li>
@@ -65,1082 +68,1114 @@
     </div>
 </header>
 
-<div  style="text-align:center">
-    <img src="images/yingxiang1.PNG" style="margin-bottom:40px;margin-left:-100px;margin-top:30px"alt="header">
-
+<div style="text-align:center">
+    <img src="images/yingxiang1.PNG" style="margin-bottom:40px;margin-left:-100px;margin-top:30px" alt="header">
 </div>
-<div class="dropdown" style="z-index:999">
-    <button class="dropbtn">影像主题</button>
-    <div class="dropdown-content">
-        <li class="btn"  onclick="getlist(0)"
 
-            data-filter="0"> 全部影像</li>
-        <li class="btn"  onclick="getlist(1)"
-
-            data-filter="1"> 陈氏宗祠</li>
-        <li class="btn"  onclick="javascript:getlist(1)"
-
-            data-filter="2"> 大司马家庙</li>
-        <li class="btn"  onclick="getlist(2)"
-
-            data-filter="3"> 庄氏家庙</li>
-        <li class="btn"  onclick="getlist(3)"
-
-            data-filter="4"> 翁万达宗祠</li>
-        <li class="btn"  onclick="getlist(4)"
-
-            data-filter="5"> 吴氏</li>
-        <li class="btn"  onclick="getlist(5)"
-
-            data-filter="6"> 天褒孝节</li>
-        <li class="btn"  onclick="getlist(6)"
-
-            data-filter="7"> 潮乐团</li>
-        <li class="btn"  onclick="getlist(7)"
-
-            data-filter="8"> 石狮</li>
-        <li class="btn"  onclick="getlist(8)"
-
-            data-filter="9"> 街道</li>
-        <li class="btn"  onclick="getlist(9)"
-
-            data-filter="10"> 城墙遗址</li>
-        <li class="btn"  onclick="getlist(10)"
-
-            data-filter="11"> 大队</li>
-        <li class="btn"  onclick="getlist(11)"
-
-            data-filter="12"> 天宠褒封</li>
-        <li class="btn"  onclick="getlist(12)"
-
-            data-filter="13"> 太和善堂鮀江分社</li>
-        <li class="btn"  onclick="getlist(13)"
-
-            data-filter="14"> 奉政第</li>
-        <li class="btn"  onclick="getlist(14)"
-
-            data-filter="15"> 庄氏大夫第</li>
-        <li class="btn"  onclick="getlist(15)"
-
-            data-filter="16"> 曙色开斋</li>
-        <li class="btn"  onclick="getlist(16)"
-
-            data-filter="17"> 翁氏家庙</li>
-        <li class="btn"  onclick="getlist(17)"
-
-            data-filter="18"> 谢氏宗祠</li>
-        <li class="btn"  onclick="getlist(18)"
-
-            data-filter="19"> 资政第
-        </li>
-        <li class="btn"  onclick="getlist(19)"
-
-            onclick="getlist(1)"
-
-            data-filter="20"> 黄氏基祖祠</li>
-        <li class="btn"  onclick="getlist(20)"
-
-            data-filter="21"> 吴荣美内</li>
-        <li class="btn"  onclick="getlist(21)"
-
-            data-filter="22"> 陈氏大夫第</li>
-        <li class="btn"  onclick="getlist(22)"
-
-            data-filter="23"> 剧团</li>
-        <li class="btn"  onclick="getlist(23)"
-
-            data-filter="24"> 醒狮队</li>
-        <li class="btn"  onclick="getlist(24)"
-
-            data-filter="26"> 长庆庵</li>
-        <li class="btn"  onclick="getlist(25)"
-
-            data-filter="25"> 长乡思团队</li>
-        <li class="btn"  onclick="getlist(26)"
-
-            data-filter="27"> 其他</li>  </div>
-</div>
-</div>
 
 <div class="container">
-    <ul  id="da-thumbs" class="da-thumbs" style="margin-top:20px;margin-left:80px;width:1200px;">        <!-- Masonry Grid -->
-        <!--custom begin-->
-        <li data-category="1"   data-sort="value" style="display:none;margin-left:30px" >
-
-            <!-- Work -->
-            <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.15 东门陈氏 照壁 （陈婉儿）.jpg"
-                     alt="Portfolio Image">
-
-                <div><span>东门陈氏 照壁</span></div>
-            </a>                  <!-- End Work -->
-        </li>
-        <li data-category="1"   data-sort="value" style="display:none;margin-left:30px" >
-            <a >
-                <img   class="demo-image"  style="height:165px;width:220px;" src="images/yingxiang/7.15%20东门陈氏%20门楣（陈婉儿）.jpg"
-                       alt="Portfolio Image">
-                <div><span>    东门陈氏 门楣壁</span></div>
-            </a>
-        </li>
-        <li data-category="2"   data-sort="value" style="display:none;margin-left:30px" >
-
-
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.15 大司马家庙 正面（近）（陈婉儿）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 大司马家庙 正面（近壁</span></div>
-            </a>
-        </li>
-        <li data-category="3"   data-sort="value" style="display:none;margin-left:30px" >
-
-
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.15 庄氏家庙 （陈婉儿）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 庄氏家庙</span></div>
-            </a>
-        </li>
-        <li data-category="3"   data-sort="value" style="display:none;margin-left:30px" >
-
-
-
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.15 庄氏家庙正面（全景）（陈婉儿）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 庄氏家庙正面（全景）</span></div>
-            </a>
-        </li>
-        <li data-category="4"   data-sort="value" style="display:none;margin-left:30px" >
-
-
-
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.15 翁万达宗祠 大厅侧面（右）（陈婉儿）.jpg"
-                     alt="Portfolio Image">
-                <div><span>  翁万达宗祠 大厅侧面（右）</span></div>
-            </a>
-        </li>
-        <li data-category="4"   data-sort="value" style="display:none;margin-left:30px" >
-
-
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.15 翁万达宗祠 大厅正面（近）（陈婉儿）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 翁万达宗祠 大厅正面（近）</span></div>
-            </a>
-        </li>
-        <li data-category="5"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 吴氏ka厅1.（李心恬）JPG.jpg"
-                     alt="Portfolio Image">
-                <div><span> 吴氏ka厅</span></div>
-            </a>
-        </li>
-        <li data-category="5"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 吴氏ka厅2.（李心恬）JPG.jpg"
-                     alt="Portfolio Image">
-                <div><span> 吴氏ka厅</span></div>
-            </a>
-        </li>
-        <li data-category="5"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 吴氏ka厅3（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 吴氏ka厅</span></div>
-            </a>
-        </li>
-        <li data-category="5"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 吴氏ka厅4（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 吴氏ka厅</span></div>
-            </a>
-        </li>
-        <li data-category="5"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 吴氏ka厅5.（李心恬）JPG.jpg"
-                     alt="Portfolio Image">
-                <div><span> 吴氏ka厅</span></div>
-            </a>
-        </li>
-        <li data-category="5"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 吴氏ka厅6（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 吴氏ka厅</span></div>
-            </a>
-        </li>
-        <li data-category="6"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 天褒孝节（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 天褒孝节</span></div>
-            </a>
-        </li>
-        <li data-category="7"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 潮乐团.jpg"
-                     alt="Portfolio Image">
-                <div><span> 潮乐团</span></div>
-            </a>
-        </li>
-        <li data-category="7"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 潮乐团2（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 潮乐团</span></div>
-            </a>
-        </li>
-        <li data-category="7"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 潮乐团3.jpg"
-                     alt="Portfolio Image">
-                <div><span> 潮乐团</span></div>
-            </a>
-        </li>
-        <li data-category="8"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 石狮1（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 石狮</span></div>
-            </a>
-        </li>
-        <li data-category="8"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 石狮2（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 石狮</span></div>
-            </a>
-        </li>
-        <li data-category="9"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 街道1（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 街道</span></div>
-            </a>
-        </li>
-        <li data-category="9"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 街道2（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 街道</span></div>
-            </a>
-        </li>
-        <li data-category="9"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.19 街道3（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 街道</span></div>
-            </a>
-        </li>
-        <li data-category="27"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 元天上帝庙重建记.jpg"
-                     alt="Portfolio Image">
-                <div><span> 元天上帝庙重建记</span></div>
-            </a>
-        </li>
-        <li data-category="10"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 城墙遗址1（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 城墙遗址</span></div>
-            </a>
-        </li>
-        <li data-category="10"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 城墙遗址2（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 城墙遗址</span></div>
-            </a>
-        </li>
-        <li data-category="2"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 大司马家庙（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 大司马家庙</span></div>
-            </a>
-        </li>
-        <li data-category="11"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 大队 颍川世家（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 大队 颍川世家</span></div>
-            </a>
-        </li>
-        <li data-category="11"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 大队2 陈仁蓬民居（林志和）JPG.jpg"
-                     alt="Portfolio Image">
-                <div><span> 大队 陈仁蓬民居</span></div>
-            </a>
-        </li>
-        <li data-category="12"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 天宠褒封（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 天宠褒封</span></div>
-            </a>
-        </li>
-        <li data-category="13"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 太和善堂鮀江分社1（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 太和善堂鮀江分社</span></div>
-            </a>
-        </li>
-        <li data-category="13"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 太和善堂鮀江分社2（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 太和善堂鮀江分社</span></div>
-            </a>
-        </li>
-        <li data-category="14"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 奉政第（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 奉政第</span></div>
-            </a>
-        </li>
-        <li data-category="15"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 庄氏大夫第1（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 庄氏大夫第</span></div>
-            </a>
-        </li>
-        <li data-category="15"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 庄氏大夫第2（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 庄氏大夫第</span></div>
-            </a>
-        </li>
-        <li data-category="3"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 庄氏家庙 照壁（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 庄氏家庙 照壁</span></div>
-            </a>
-        </li>
-        <li data-category="3"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 承先堂（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 庄氏家庙 承先堂</span></div>
-            </a>
-        </li>
-        <li data-category="16"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 曙色开斋1（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 曙色开斋</span></div>
-            </a>
-        </li>
-        <li data-category="16"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 曙色开斋2（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 曙色开斋</span></div>
-            </a>
-        </li>
-        <li data-category="16"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 曙色开斋3（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 曙色开斋</span></div>
-            </a>
-        </li>
-        <li data-category="16"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 曙色开斋4（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 曙色开斋</span></div>
-            </a>
-        </li>
-        <li data-category="16"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 曙色开斋5（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 曙色开斋</span></div>
-            </a>
-        </li>
-        <li data-category="27"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 永思堂.jpg"
-                     alt="Portfolio Image">
-                <div><span> 永思堂</span></div>
-            </a>
-        </li>
-        <li data-category="17"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 翁氏家庙（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 翁氏家庙</span></div>
-            </a>
-        </li>
-        <li data-category="18"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 谢氏宗祠1（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 谢氏宗祠</span></div>
-            </a>
-        </li>
-        <li data-category="18"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 谢氏宗祠2（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 谢氏宗祠</span></div>
-            </a>
-        </li>
-        <li data-category="18"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 谢氏宗祠3（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 谢氏宗祠</span></div>
-            </a>
-        </li>
-        <li data-category="18"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 谢氏宗祠4（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 谢氏宗祠</span></div>
-            </a>
-        </li>
-        <li data-category="18"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 谢氏宗祠4（林志和）（修）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 谢氏宗祠</span></div>
-            </a>
-        </li>
-        <li data-category="19"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 资政第（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 资政第</span></div>
-            </a>
-        </li>
-        <li data-category="26"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 长庆庵（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 长庆庵</span></div>
-            </a>
-        </li>
-        <li data-category="1"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 陈存实圣旨牌2（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 陈存实圣旨牌</span></div>
-            </a>
-        </li>
-        <li data-category="1"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 陈存实圣旨牌（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 陈存实圣旨牌</span></div>
-            </a>
-        </li>
-        <li data-category="1"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 陈氏宗祠门楣（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 陈氏宗祠门楣</span></div>
-            </a>
-        </li>
-        <li data-category="20"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 黄氏基祖祠1（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 黄氏基祖祠</span></div>
-            </a>
-        </li>
-        <li data-category="20"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 黄氏基祖祠1（陈婉儿）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 黄氏基祖祠</span></div>
-            </a>
-        </li>
-        <li data-category="20"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 黄氏基祖祠2（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 黄氏基祖祠</span></div>
-            </a>
-        </li>
-        <li data-category="20"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 黄氏基祖祠2（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 黄氏基祖祠</span></div>
-            </a>
-        </li>
-        <li data-category="27"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 ？.jpg" alt="Portfolio Image">
-                <div><span> 蓬城之景</span></div>
-            </a>
-        </li>
-        <li data-category="27"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 ？书画（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 蓬城之景</span></div>
-            </a>
-        </li>
-        <li data-category="27"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 ？（陈婉儿）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 蓬城之景</span></div>
-            </a>
-        </li>
-        <li data-category="27"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 ？？1（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 蓬城之景</span></div>
-            </a>
-        </li>
-        <li data-category="27"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 ？？2（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 蓬城之景</span></div>
-            </a>
-        </li>
-        <li data-category="27"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 ？？3（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 蓬城之景</span></div>
-            </a>
-        </li>
-        <li data-category="27"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.20 ？？4（李心恬）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 蓬城之景</span></div>
-            </a>
-        </li>
-        <li data-category="21"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.24 吴荣美内1（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 吴荣美内</span></div>
-            </a>
-        </li>
-        <li data-category="21"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.24 吴荣美内2（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 吴荣美内</span></div>
-            </a>
-        </li>
-        <li data-category="21"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.24 吴荣美内3（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 吴荣美内</span></div>
-            </a>
-        </li>
-        <li data-category="21"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.24 吴荣美内4（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 吴荣美内</span></div>
-            </a>
-        </li>
-        <li data-category="21"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.24 吴荣美内5（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 吴荣美内</span></div>
-            </a>
-        </li>
-        <li data-category="22"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.24 西门巷陈氏大夫第1（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 西门巷陈氏大夫第</span></div>
-            </a>
-        </li>
-        <li data-category="22"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.24 西门巷陈氏大夫第2（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 西门巷陈氏大夫第</span></div>
-            </a>
-        </li>
-        <li data-category="23"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.25 剧团1（许皓程）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 剧团</span></div>
-            </a>
-        </li>
-        <li data-category="23"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.25 剧团2（许皓程）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 剧团</span></div>
-            </a>
-        </li>
-        <li data-category="23"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.25 剧团3（许皓程）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 剧团</span></div>
-            </a>
-        </li>
-        <li data-category="23"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.25 学习月琴的小女孩们（彭晓娜）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 学习月琴的小女孩们</span></div>
-            </a>
-        </li>
-        <li data-category="23"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-
-                     src="images/yingxiang/7.25 孩子们正跟着横笛老师练习经典潮乐曲目《喜洋洋》(彭晓娜）.jpg" alt="Portfolio Image">
-                <div><span> 孩子们正跟着横笛老师练习经典潮乐曲目《喜洋洋》</span></div>
-            </a>
-        </li>
-        <li data-category="23"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.25 杨华老人在指导学生们（彭晓娜）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 杨华老人在指导学生们</span></div>
-            </a>
-        </li>
-        <li data-category="22"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.25 西门巷陈氏大夫第3（林志和）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 西门巷陈氏大夫第</span></div>
-            </a>
-        </li>
-        <li data-category="23"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.25 认真演奏的孩子们（彭晓娜）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 认真演奏的孩子们</span></div>
-            </a>
-        </li>
-        <li data-category="24"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.25 醒狮队1（彭晓娜）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 醒狮队</span></div>
-            </a>
-        </li>
-        <li data-category="24"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.25 醒狮队2（彭晓娜）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 醒狮队</span></div>
-            </a>
-        </li>
-        <li data-category="24"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.25 醒狮队3（彭晓娜）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 醒狮队</span></div>
-            </a>
-        </li>
-        <li data-category="27"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/7.25 ？（许皓程）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 蓬城之景</span></div>
-            </a>
-        </li>
-        <li data-category="25"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/南京大学 长乡思团队 “天褒孝节”牌坊测绘.jpg"
-                     alt="Portfolio Image">
-                <div><span> 南京大学 长乡思团队 “天褒孝节”牌坊测绘</span></div>
-            </a>
-        </li>
-        <li data-category="25"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/南京大学 长乡思团队 与当地学者交流.jpg"
-                     alt="Portfolio Image">
-                <div><span> 南京大学 长乡思团队 与当地学者交流</span></div>
-            </a>
-        </li>
-        <li data-category="25"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/南京大学 长乡思团队 听老师讲解古建故事.jpg"
-                     alt="Portfolio Image">
-                <div><span> 南京大学 长乡思团队 听老师讲解古建故事</span></div>
-            </a>
-        </li>
-        <li data-category="25"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/南京大学 长乡思团队 团队会议.jpg"
-                     alt="Portfolio Image">
-                <div><span> 南京大学 长乡思团队 团队会议</span></div>
-            </a>
-        </li>
-        <li data-category="25"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/南京大学 长乡思团队 陈家腾老人跟队员们讲圣旨牌的历史.jpg"
-                     alt="Portfolio Image">
-                <div><span> 南京大学 长乡思团队 陈家腾老人跟队员们讲圣旨牌的历史</span></div>
-            </a>
-        </li>
-        <li data-category="25"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/南京大学 长乡思团队  采访蓬洲陶德潮乐社负责人.jpg"
-                     alt="Portfolio Image">
-                <div><span> 南京大学 长乡思团队  采访蓬洲陶德潮乐社负责人</span></div>
-            </a>
-        </li>
-        <li data-category="25"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/听长辈们讲述历史.jpg"
-                     alt="Portfolio Image">
-                <div><span> 听长辈们讲述历史</span></div>
-            </a>
-        </li>
-        <li data-category="25"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/团队成员与黄锦华老师合影.jpg"
-                     alt="Portfolio Image">
-                <div><span> 团队成员与黄锦华老师合影</span></div>
-            </a>
-        </li>
-        <li data-category="25"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/团队成员采访新绿潮乐队.jpg"
-                     alt="Portfolio Image">
-                <div><span> 团队成员采访新绿潮乐队</span></div>
-            </a>
-        </li>
-        <li data-category="2"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/大司马家庙.jpg" alt="Portfolio Image">
-                <div><span> 大司马家庙</span></div>
-            </a>
-        </li>
-        <li data-category="2"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/大司马家庙2.jpg" alt="Portfolio Image">
-                <div><span> 大司马家庙</span></div>
-            </a>
-        </li>
-        <li data-category="2"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/大司马家庙内.jpg" alt="Portfolio Image">
-                <div><span> 大司马家庙内</span></div>
-            </a>
-        </li>
-        <li data-category="2"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/大司马家庙照壁.jpg" alt="Portfolio Image">
-                <div><span> 大司马家庙照壁</span></div>
-            </a>
-        </li>
-        <li data-category="11"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/大队旧址（陈仁蓬宅）.jpg"
-                     alt="Portfolio Image">
-                <div><span> 大队旧址（陈仁蓬宅）</span></div>
-            </a>
-        </li>
-        <li data-category="11"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/大队旧址（陈仁蓬宅）2.jpg"
-                     alt="Portfolio Image">
-                <div><span> 大队旧址（陈仁蓬宅）</span></div>
-            </a>
-        </li>
-        <li data-category="11"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/大队旧址（陈仁蓬宅）3.jpg"
-                     alt="Portfolio Image">
-                <div><span> 大队旧址（陈仁蓬宅）</span></div>
-            </a>
-        </li>
-        <li data-category="3"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/庄氏家庙.jpg" alt="Portfolio Image">
-                <div><span> 庄氏家庙</span></div>
-            </a>
-        </li>
-        <li data-category="25"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/成员们一起工作.jpg" alt="Portfolio Image">
-                <div><span> 成员们一起工作</span></div>
-            </a>
-        </li>
-        <li data-category="9"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/街景.jpg" alt="Portfolio Image">
-                <div><span> 街景</span></div>
-            </a>
-        </li>
-        <li data-category="9"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/街景2.jpg" alt="Portfolio Image">
-                <div><span> 街景</span></div>
-            </a>
-        </li>
-        <li data-category="9"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/街景3.jpg" alt="Portfolio Image">
-                <div><span> 街景</span></div>
-            </a>
-        </li>
-        <li data-category="10"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     style="height:165px;width:220px;"
-
-                     src="images/yingxiang/西门城墙遗址.jpg" alt="Portfolio Image">
-                <div><span> 西门城墙遗址</span></div>
-            </a>
-        </li>
-        <li data-category="1"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/西门陈氏宗祠.jpg" alt="Portfolio Image">
-                <div><span> 西门陈氏宗祠</span></div>
-            </a>
-        </li>
-        <li data-category="25"   data-sort="value" style="display:none;margin-left:30px" >
-             <a >
-                <img   class="demo-image"  style="height:165px;width:220px;"
-
-                     src="images/yingxiang/跟随老师探访古城.jpg"
-                     alt="Portfolio Image">
-                <div><span> 跟随老师探访古城</span></div>
-            </a>
-
-
-            <!-- End Masonry Grid -->
-    </ul>
+    <!--<div class="col-12">-->
+        <!--<div class="dropdown" style="z-index:999">-->
+            <!--<button class="dropbtn">影像主题</button>-->
+            <!--<div class="dropdown-content">-->
+                <!--<li class="btn" onclick="getlist(0)"-->
+
+                    <!--data-filter="0"> 全部影像-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(1)"-->
+
+                    <!--data-filter="1"> 陈氏宗祠-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="javascript:getlist(1)"-->
+
+                    <!--data-filter="2"> 大司马家庙-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(2)"-->
+
+                    <!--data-filter="3"> 庄氏家庙-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(3)"-->
+
+                    <!--data-filter="4"> 翁万达宗祠-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(4)"-->
+
+                    <!--data-filter="5"> 吴氏-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(5)"-->
+
+                    <!--data-filter="6"> 天褒孝节-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(6)"-->
+
+                    <!--data-filter="7"> 潮乐团-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(7)"-->
+
+                    <!--data-filter="8"> 石狮-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(8)"-->
+
+                    <!--data-filter="9"> 街道-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(9)"-->
+
+                    <!--data-filter="10"> 城墙遗址-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(10)"-->
+
+                    <!--data-filter="11"> 大队-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(11)"-->
+
+                    <!--data-filter="12"> 天宠褒封-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(12)"-->
+
+                    <!--data-filter="13"> 太和善堂鮀江分社-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(13)"-->
+
+                    <!--data-filter="14"> 奉政第-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(14)"-->
+
+                    <!--data-filter="15"> 庄氏大夫第-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(15)"-->
+
+                    <!--data-filter="16"> 曙色开斋-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(16)"-->
+
+                    <!--data-filter="17"> 翁氏家庙-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(17)"-->
+
+                    <!--data-filter="18"> 谢氏宗祠-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(18)"-->
+
+                    <!--data-filter="19"> 资政第-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(19)"-->
+
+                    <!--onclick="getlist(1)"-->
+
+                    <!--data-filter="20"> 黄氏基祖祠-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(20)"-->
+
+                    <!--data-filter="21"> 吴荣美内-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(21)"-->
+
+                    <!--data-filter="22"> 陈氏大夫第-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(22)"-->
+
+                    <!--data-filter="23"> 剧团-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(23)"-->
+
+                    <!--data-filter="24"> 醒狮队-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(24)"-->
+
+                    <!--data-filter="26"> 长庆庵-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(25)"-->
+
+                    <!--data-filter="25"> 长乡思团队-->
+                <!--</li>-->
+                <!--<li class="btn" onclick="getlist(26)"-->
+
+                    <!--data-filter="27"> 其他-->
+                <!--</li>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="col-12 text-center">
+        <div class="photo-list">
+        <ul id="da-thumbs" class="da-thumbs">
+            <!-- Masonry Grid -->
+            <!--custom begin-->
+            <li data-category="1" data-sort="value" >
+
+                <!-- Work -->
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.15 东门陈氏 照壁 （陈婉儿）.jpg"
+                         alt="Portfolio Image">
+
+                    <div><span>东门陈氏 照壁</span></div>
+                </a>                  <!-- End Work -->
+            </li>
+            <li data-category="1" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+                         src="images/yingxiang/7.15%20东门陈氏%20门楣（陈婉儿）.jpg"
+                         alt="Portfolio Image">
+                    <div><span>    东门陈氏 门楣壁</span></div>
+                </a>
+            </li>
+            <li data-category="2" data-sort="value" >
+
+
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.15 大司马家庙 正面（近）（陈婉儿）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 大司马家庙 正面（近壁</span></div>
+                </a>
+            </li>
+            <li data-category="3" data-sort="value" >
+
+
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.15 庄氏家庙 （陈婉儿）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 庄氏家庙</span></div>
+                </a>
+            </li>
+            <li data-category="3" data-sort="value" >
+
+
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.15 庄氏家庙正面（全景）（陈婉儿）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 庄氏家庙正面（全景）</span></div>
+                </a>
+            </li>
+            <li data-category="4" data-sort="value" >
+
+
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.15 翁万达宗祠 大厅侧面（右）（陈婉儿）.jpg"
+                         alt="Portfolio Image">
+                    <div><span>  翁万达宗祠 大厅侧面（右）</span></div>
+                </a>
+            </li>
+            <li data-category="4" data-sort="value" >
+
+
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.15 翁万达宗祠 大厅正面（近）（陈婉儿）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 翁万达宗祠 大厅正面（近）</span></div>
+                </a>
+            </li>
+            <li data-category="5" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 吴氏ka厅1.（李心恬）JPG.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 吴氏ka厅</span></div>
+                </a>
+            </li>
+            <li data-category="5" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 吴氏ka厅2.（李心恬）JPG.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 吴氏ka厅</span></div>
+                </a>
+            </li>
+            <li data-category="5" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 吴氏ka厅3（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 吴氏ka厅</span></div>
+                </a>
+            </li>
+            <li data-category="5" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 吴氏ka厅4（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 吴氏ka厅</span></div>
+                </a>
+            </li>
+            <li data-category="5" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 吴氏ka厅5.（李心恬）JPG.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 吴氏ka厅</span></div>
+                </a>
+            </li>
+            <li data-category="5" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 吴氏ka厅6（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 吴氏ka厅</span></div>
+                </a>
+            </li>
+            <li data-category="6" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 天褒孝节（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 天褒孝节</span></div>
+                </a>
+            </li>
+            <li data-category="7" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 潮乐团.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 潮乐团</span></div>
+                </a>
+            </li>
+            <li data-category="7" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 潮乐团2（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 潮乐团</span></div>
+                </a>
+            </li>
+            <li data-category="7" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 潮乐团3.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 潮乐团</span></div>
+                </a>
+            </li>
+            <li data-category="8" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 石狮1（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 石狮</span></div>
+                </a>
+            </li>
+            <li data-category="8" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 石狮2（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 石狮</span></div>
+                </a>
+            </li>
+            <li data-category="9" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 街道1（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 街道</span></div>
+                </a>
+            </li>
+            <li data-category="9" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 街道2（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 街道</span></div>
+                </a>
+            </li>
+            <li data-category="9" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.19 街道3（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 街道</span></div>
+                </a>
+            </li>
+            <li data-category="27" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 元天上帝庙重建记.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 元天上帝庙重建记</span></div>
+                </a>
+            </li>
+            <li data-category="10" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 城墙遗址1（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 城墙遗址</span></div>
+                </a>
+            </li>
+            <li data-category="10" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 城墙遗址2（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 城墙遗址</span></div>
+                </a>
+            </li>
+            <li data-category="2" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 大司马家庙（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 大司马家庙</span></div>
+                </a>
+            </li>
+            <li data-category="11" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 大队 颍川世家（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 大队 颍川世家</span></div>
+                </a>
+            </li>
+            <li data-category="11" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 大队2 陈仁蓬民居（林志和）JPG.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 大队 陈仁蓬民居</span></div>
+                </a>
+            </li>
+            <li data-category="12" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 天宠褒封（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 天宠褒封</span></div>
+                </a>
+            </li>
+            <li data-category="13" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 太和善堂鮀江分社1（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 太和善堂鮀江分社</span></div>
+                </a>
+            </li>
+            <li data-category="13" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 太和善堂鮀江分社2（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 太和善堂鮀江分社</span></div>
+                </a>
+            </li>
+            <li data-category="14" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 奉政第（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 奉政第</span></div>
+                </a>
+            </li>
+            <li data-category="15" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 庄氏大夫第1（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 庄氏大夫第</span></div>
+                </a>
+            </li>
+            <li data-category="15" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 庄氏大夫第2（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 庄氏大夫第</span></div>
+                </a>
+            </li>
+            <li data-category="3" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 庄氏家庙 照壁（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 庄氏家庙 照壁</span></div>
+                </a>
+            </li>
+            <li data-category="3" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 承先堂（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 庄氏家庙 承先堂</span></div>
+                </a>
+            </li>
+            <li data-category="16" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 曙色开斋1（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 曙色开斋</span></div>
+                </a>
+            </li>
+            <li data-category="16" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 曙色开斋2（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 曙色开斋</span></div>
+                </a>
+            </li>
+            <li data-category="16" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 曙色开斋3（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 曙色开斋</span></div>
+                </a>
+            </li>
+            <li data-category="16" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 曙色开斋4（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 曙色开斋</span></div>
+                </a>
+            </li>
+            <li data-category="16" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 曙色开斋5（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 曙色开斋</span></div>
+                </a>
+            </li>
+            <li data-category="27" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 永思堂.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 永思堂</span></div>
+                </a>
+            </li>
+            <li data-category="17" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 翁氏家庙（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 翁氏家庙</span></div>
+                </a>
+            </li>
+            <li data-category="18" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 谢氏宗祠1（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 谢氏宗祠</span></div>
+                </a>
+            </li>
+            <li data-category="18" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 谢氏宗祠2（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 谢氏宗祠</span></div>
+                </a>
+            </li>
+            <li data-category="18" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 谢氏宗祠3（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 谢氏宗祠</span></div>
+                </a>
+            </li>
+            <li data-category="18" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 谢氏宗祠4（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 谢氏宗祠</span></div>
+                </a>
+            </li>
+            <li data-category="18" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 谢氏宗祠4（林志和）（修）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 谢氏宗祠</span></div>
+                </a>
+            </li>
+            <li data-category="19" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 资政第（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 资政第</span></div>
+                </a>
+            </li>
+            <li data-category="26" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 长庆庵（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 长庆庵</span></div>
+                </a>
+            </li>
+            <li data-category="1" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 陈存实圣旨牌2（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 陈存实圣旨牌</span></div>
+                </a>
+            </li>
+            <li data-category="1" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 陈存实圣旨牌（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 陈存实圣旨牌</span></div>
+                </a>
+            </li>
+            <li data-category="1" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 陈氏宗祠门楣（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 陈氏宗祠门楣</span></div>
+                </a>
+            </li>
+            <li data-category="20" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 黄氏基祖祠1（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 黄氏基祖祠</span></div>
+                </a>
+            </li>
+            <li data-category="20" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 黄氏基祖祠1（陈婉儿）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 黄氏基祖祠</span></div>
+                </a>
+            </li>
+            <li data-category="20" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 黄氏基祖祠2（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 黄氏基祖祠</span></div>
+                </a>
+            </li>
+            <li data-category="20" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 黄氏基祖祠2（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 黄氏基祖祠</span></div>
+                </a>
+            </li>
+            <li data-category="27" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 ？.jpg" alt="Portfolio Image">
+                    <div><span> 蓬城之景</span></div>
+                </a>
+            </li>
+            <li data-category="27" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 ？书画（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 蓬城之景</span></div>
+                </a>
+            </li>
+            <li data-category="27" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 ？（陈婉儿）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 蓬城之景</span></div>
+                </a>
+            </li>
+            <li data-category="27" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 ？？1（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 蓬城之景</span></div>
+                </a>
+            </li>
+            <li data-category="27" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 ？？2（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 蓬城之景</span></div>
+                </a>
+            </li>
+            <li data-category="27" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 ？？3（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 蓬城之景</span></div>
+                </a>
+            </li>
+            <li data-category="27" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.20 ？？4（李心恬）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 蓬城之景</span></div>
+                </a>
+            </li>
+            <li data-category="21" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.24 吴荣美内1（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 吴荣美内</span></div>
+                </a>
+            </li>
+            <li data-category="21" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.24 吴荣美内2（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 吴荣美内</span></div>
+                </a>
+            </li>
+            <li data-category="21" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.24 吴荣美内3（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 吴荣美内</span></div>
+                </a>
+            </li>
+            <li data-category="21" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.24 吴荣美内4（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 吴荣美内</span></div>
+                </a>
+            </li>
+            <li data-category="21" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.24 吴荣美内5（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 吴荣美内</span></div>
+                </a>
+            </li>
+            <li data-category="22" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.24 西门巷陈氏大夫第1（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 西门巷陈氏大夫第</span></div>
+                </a>
+            </li>
+            <li data-category="22" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.24 西门巷陈氏大夫第2（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 西门巷陈氏大夫第</span></div>
+                </a>
+            </li>
+            <li data-category="23" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.25 剧团1（许皓程）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 剧团</span></div>
+                </a>
+            </li>
+            <li data-category="23" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.25 剧团2（许皓程）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 剧团</span></div>
+                </a>
+            </li>
+            <li data-category="23" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.25 剧团3（许皓程）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 剧团</span></div>
+                </a>
+            </li>
+            <li data-category="23" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.25 学习月琴的小女孩们（彭晓娜）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 学习月琴的小女孩们</span></div>
+                </a>
+            </li>
+            <li data-category="23" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+
+                         src="images/yingxiang/7.25 孩子们正跟着横笛老师练习经典潮乐曲目《喜洋洋》(彭晓娜）.jpg" alt="Portfolio Image">
+                    <div><span> 孩子们正跟着横笛老师练习经典潮乐曲目《喜洋洋》</span></div>
+                </a>
+            </li>
+            <li data-category="23" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.25 杨华老人在指导学生们（彭晓娜）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 杨华老人在指导学生们</span></div>
+                </a>
+            </li>
+            <li data-category="22" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.25 西门巷陈氏大夫第3（林志和）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 西门巷陈氏大夫第</span></div>
+                </a>
+            </li>
+            <li data-category="23" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.25 认真演奏的孩子们（彭晓娜）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 认真演奏的孩子们</span></div>
+                </a>
+            </li>
+            <li data-category="24" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.25 醒狮队1（彭晓娜）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 醒狮队</span></div>
+                </a>
+            </li>
+            <li data-category="24" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.25 醒狮队2（彭晓娜）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 醒狮队</span></div>
+                </a>
+            </li>
+            <li data-category="24" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.25 醒狮队3（彭晓娜）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 醒狮队</span></div>
+                </a>
+            </li>
+            <li data-category="27" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/7.25 ？（许皓程）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 蓬城之景</span></div>
+                </a>
+            </li>
+            <li data-category="25" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/南京大学 长乡思团队 “天褒孝节”牌坊测绘.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 南京大学 长乡思团队 “天褒孝节”牌坊测绘</span></div>
+                </a>
+            </li>
+            <li data-category="25" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/南京大学 长乡思团队 与当地学者交流.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 南京大学 长乡思团队 与当地学者交流</span></div>
+                </a>
+            </li>
+            <li data-category="25" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/南京大学 长乡思团队 听老师讲解古建故事.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 南京大学 长乡思团队 听老师讲解古建故事</span></div>
+                </a>
+            </li>
+            <li data-category="25" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/南京大学 长乡思团队 团队会议.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 南京大学 长乡思团队 团队会议</span></div>
+                </a>
+            </li>
+            <li data-category="25" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/南京大学 长乡思团队 陈家腾老人跟队员们讲圣旨牌的历史.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 南京大学 长乡思团队 陈家腾老人跟队员们讲圣旨牌的历史</span></div>
+                </a>
+            </li>
+            <li data-category="25" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/南京大学 长乡思团队  采访蓬洲陶德潮乐社负责人.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 南京大学 长乡思团队  采访蓬洲陶德潮乐社负责人</span></div>
+                </a>
+            </li>
+            <li data-category="25" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/听长辈们讲述历史.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 听长辈们讲述历史</span></div>
+                </a>
+            </li>
+            <li data-category="25" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/团队成员与黄锦华老师合影.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 团队成员与黄锦华老师合影</span></div>
+                </a>
+            </li>
+            <li data-category="25" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/团队成员采访新绿潮乐队.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 团队成员采访新绿潮乐队</span></div>
+                </a>
+            </li>
+            <li data-category="2" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/大司马家庙.jpg" alt="Portfolio Image">
+                    <div><span> 大司马家庙</span></div>
+                </a>
+            </li>
+            <li data-category="2" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/大司马家庙2.jpg" alt="Portfolio Image">
+                    <div><span> 大司马家庙</span></div>
+                </a>
+            </li>
+            <li data-category="2" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/大司马家庙内.jpg" alt="Portfolio Image">
+                    <div><span> 大司马家庙内</span></div>
+                </a>
+            </li>
+            <li data-category="2" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/大司马家庙照壁.jpg" alt="Portfolio Image">
+                    <div><span> 大司马家庙照壁</span></div>
+                </a>
+            </li>
+            <li data-category="11" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/大队旧址（陈仁蓬宅）.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 大队旧址（陈仁蓬宅）</span></div>
+                </a>
+            </li>
+            <li data-category="11" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/大队旧址（陈仁蓬宅）2.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 大队旧址（陈仁蓬宅）</span></div>
+                </a>
+            </li>
+            <li data-category="11" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/大队旧址（陈仁蓬宅）3.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 大队旧址（陈仁蓬宅）</span></div>
+                </a>
+            </li>
+            <li data-category="3" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/庄氏家庙.jpg" alt="Portfolio Image">
+                    <div><span> 庄氏家庙</span></div>
+                </a>
+            </li>
+            <li data-category="25" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/成员们一起工作.jpg" alt="Portfolio Image">
+                    <div><span> 成员们一起工作</span></div>
+                </a>
+            </li>
+            <li data-category="9" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/街景.jpg" alt="Portfolio Image">
+                    <div><span> 街景</span></div>
+                </a>
+            </li>
+            <li data-category="9" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/街景2.jpg" alt="Portfolio Image">
+                    <div><span> 街景</span></div>
+                </a>
+            </li>
+            <li data-category="9" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/街景3.jpg" alt="Portfolio Image">
+                    <div><span> 街景</span></div>
+                </a>
+            </li>
+            <li data-category="10" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/西门城墙遗址.jpg" alt="Portfolio Image">
+                    <div><span> 西门城墙遗址</span></div>
+                </a>
+            </li>
+            <li data-category="1" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/西门陈氏宗祠.jpg" alt="Portfolio Image">
+                    <div><span> 西门陈氏宗祠</span></div>
+                </a>
+            </li>
+            <li data-category="25" data-sort="value" >
+                <a>
+                    <img class="demo-image" 
+
+                         src="images/yingxiang/跟随老师探访古城.jpg"
+                         alt="Portfolio Image">
+                    <div><span> 跟随老师探访古城</span></div>
+                </a>
+
+
+                <!-- End Masonry Grid -->
+        </ul>
+        </div>
+    </div>
 </div>
+
 <div class="show-footer">
-    &copy; 2017-2018  长乡思 - 蓬洲古城
+    &copy; 2017-2018 长乡思 - 蓬洲古城
 </div>
 <script type="text/javascript">
     $(function () {
-        $("li").click(function() {
+        $("li").click(function () {
             //          第一种方法
             //          $("li").removeClass("active");//删除指定的 class 属性
             //          $(this).addClass("active");//向被选元素添加一个或多个类
@@ -1151,65 +1186,64 @@
         });
 
     })
-    function getlist(num){
-        var con=document.getElementsByTagName("li");
 
-        for (var i=0; i< con.length;i++){
-            var text=con[i].getAttribute("data-category");
+    function getlist(num) {
+        var con = document.getElementsByTagName("li");
 
-            if(text!=null)
-            {
-                con[i].style="display:none";
+        for (var i = 0; i < con.length; i++) {
+            var text = con[i].getAttribute("data-category");
+
+            if (text != null) {
+                con[i].style = "display:none";
             }
         }
-        if(num!=0) {
+        if (num != 0) {
             for (var i = 0; i < con.length; i++) {
                 var text = con[i].getAttribute("data-category");
 
                 if (text == num) {
-                    con[i].style = "margin-left:30px";
+                    con[i].style = "margin:10px 1%";
                 }
             }
         }
         else
             for (var i = 0; i < con.length; i++) {
-                con[i].style="margin-left:30px";
+                con[i].style = "margin:10px 1%";
             }
-    }	</script>
+    }    </script>
 <script>
-    $(function() {
+    $(function () {
 
-        $(' #da-thumbs > li ').each( function() { $(this).hoverdir({
-            hoverDelay : 300, //
-            inverse : true //
-        }); } );
+        $(' #da-thumbs > li ').each(function () {
+            $(this).hoverdir({
+                hoverDelay: 300, //
+                inverse: true //
+            });
+        });
 
         //分类
         var url = location.search;
         if (url.indexOf("?") != -1) {
             var num = url.substr(1);
-            if(num!='0'){
+            if (num != '0') {
                 getlist(num);
             }
             else {
-                var con=document.getElementsByTagName("li");
+                var con = document.getElementsByTagName("li");
                 for (var i = 0; i < con.length; i++) {
-                    con[i].style="margin-left:30px";
+                    con[i].style = "margin:10px 1%";
                 }
             }
 
         }
 
 
-
     });
 </script>
 <script>
-    var elements = document.querySelectorAll( '.demo-image' );
-    Intense( elements );
+    var elements = document.querySelectorAll('.demo-image');
+    Intense(elements);
 </script>
-
-
 
 
 </body>

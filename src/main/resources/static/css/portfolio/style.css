@@ -85,6 +85,15 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.photo-list .da-thumbs li {
+    width: 23%;
+}
+
+.photo-list .da-thumbs li img {
+    height: 165px;
+    width: 100%;
+}
+
 .da-thumbs li a,
 .da-thumbs li a img {
     width: 100%;
