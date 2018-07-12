@@ -76,12 +76,13 @@ var Intense = (function() {
       source ) {
 
       var heightRatio = window.innerHeight / source.h;
-
+	 var widthRatio = window.innerWidth / source.w;
+	
       if( (source.w * heightRatio) > window.innerWidth ) {
-        return { w: source.w * heightRatio, h: source.h * heightRatio, fit: true };
+        return { w: source.w* heightRatio, h: source.h * heightRatio, fit: true };
       } else {
-        var widthRatio = window.innerWidth / source.w;
-        return { w: source.w * widthRatio, h: source.h * widthRatio, fit: false };
+       // var widthRatio = window.innerWidth / source.w;
+        return { w: source.w* heightRatio, h: source.h * heightRatio, fit: true };
       }
     }
 
