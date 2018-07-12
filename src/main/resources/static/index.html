@@ -91,28 +91,36 @@
 
 
 <!--========== SWIPER SLIDER ==========-->
-<div class="s-swiper js__swiper-one-item">
+<div >
     <!-- Swiper Wrapper -->
     <div class="swiper-wrapper">
 
-        <div class="g-fullheight--xs g-bg-position--center swiper-slide"
-             style="background: url('images/index/slider/7.24 吴荣美内1（林志和）.jpg');">
-            <div class="container g-text-center--xs g-ver-center--xs">
-                <div class="g-margin-b-30--xs">
-                    <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">吴荣美内</h1>
-                </div>
-            </div>
+
+        <div class="g-fullheight--xs g-bg-position--center">
+            <!--<div class="container">-->
+                <div id="test"></div>
+            <!--</div>-->
         </div>
-        <div class="g-fullheight--xs g-bg-position--center swiper-slide"
-             style="background: url('images/index/slider/7.24 西门巷陈氏大夫第2（林志和）.jpg');">
-            <div class="container g-text-center--xs g-ver-center--xs">
-                <div class="g-margin-b-30--xs">
-                    <div class="g-margin-b-30--xs">
-                        <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">大夫第</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--<div class="g-fullheight&#45;&#45;xs g-bg-position&#45;&#45;center swiper-slide"-->
+             <!--style="background: url('images/index/slider/7.24 西门巷陈氏大夫第2（林志和）.jpg');">-->
+            <!--<div class="container g-text-center&#45;&#45;xs g-ver-center&#45;&#45;xs">-->
+                <!--<div class="g-margin-b-30&#45;&#45;xs">-->
+                    <!--<div class="g-margin-b-30&#45;&#45;xs">-->
+                        <!--<h1 class="g-font-size-35&#45;&#45;xs g-font-size-45&#45;&#45;sm g-font-size-55&#45;&#45;md g-color&#45;&#45;white">大夫第</h1>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="g-fullheight&#45;&#45;xs g-bg-position&#45;&#45;center swiper-slide"-->
+             <!--style="background: url('images/index/slider/7.24 吴荣美内1（林志和）.jpg');">-->
+            <!--<div class="container g-text-center&#45;&#45;xs g-ver-center&#45;&#45;xs">-->
+                <!--<div class="g-margin-b-30&#45;&#45;xs">-->
+                    <!--<h1 class="g-font-size-35&#45;&#45;xs g-font-size-45&#45;&#45;sm g-font-size-55&#45;&#45;md g-color&#45;&#45;white">吴荣美内</h1>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
         <!--<div class="g-fullheight&#45;&#45;xs g-bg-position&#45;&#45;center swiper-slide"-->
              <!--style="background: url('images/index/slider/微信截图_20170913142644.png');">-->
             <!--<div class="container g-text-center&#45;&#45;xs g-ver-center&#45;&#45;xs">-->
@@ -126,10 +134,10 @@
     <!-- End Swiper Wrapper -->
 
     <!-- Arrows -->
-    <a href="javascript:void(0);"
-       class="s-swiper__arrow-v1--right s-icon s-icon--md s-icon--white-brd g-radius--circle ti-angle-right js__swiper-btn--next"></a>
-    <a href="javascript:void(0);"
-       class="s-swiper__arrow-v1--left s-icon s-icon--md s-icon--white-brd g-radius--circle ti-angle-left js__swiper-btn--prev"></a>
+    <!--<a href="javascript:void(0);"-->
+       <!--class="s-swiper__arrow-v1&#45;&#45;right s-icon s-icon&#45;&#45;md s-icon&#45;&#45;white-brd g-radius&#45;&#45;circle ti-angle-right js__swiper-btn&#45;&#45;next"></a>-->
+    <!--<a href="javascript:void(0);"-->
+       <!--class="s-swiper__arrow-v1&#45;&#45;left s-icon s-icon&#45;&#45;md s-icon&#45;&#45;white-brd g-radius&#45;&#45;circle ti-angle-left js__swiper-btn&#45;&#45;prev"></a>-->
     <!-- End Arrows -->
 
 </div>
@@ -334,6 +342,131 @@
 
 
 <!--========== JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) ==========-->
+
+<script src="js/three.js"></script>
+<script src="js/renderers/CSS3DRenderer.js"></script>
+
+<script>
+    var camera, scene, renderer;
+    var geometry, material, mesh;
+    var target = new THREE.Vector3();
+    var lon = 90, lat = 0;
+    var phi = 0, theta = 0;
+    var touchX, touchY;
+    init();
+    animate();
+    function init() {
+        camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000 );
+        scene = new THREE.Scene();
+        var sides = [
+            {
+                url: 'images/panorama/posx.jpg',
+                position: [ -512, 0, 0 ],
+                rotation: [ 0, Math.PI / 2, 0 ]
+            },
+            {
+                url: 'images/panorama/negx.jpg',
+                position: [ 512, 0, 0 ],
+                rotation: [ 0, -Math.PI / 2, 0 ]
+            },
+            {
+                url: 'images/panorama/posy.jpg',
+                position: [ 0,  512, 0 ],
+                rotation: [ Math.PI / 2, 0, Math.PI ]
+            },
+            {
+                url: 'images/panorama/negy.jpg',
+                position: [ 0, -512, 0 ],
+                rotation: [ - Math.PI / 2, 0, Math.PI ]
+            },
+            {
+                url: 'images/panorama/posz.jpg',
+                position: [ 0, 0, 512 ],
+                rotation: [ 0, Math.PI, 0 ]
+            },
+            {
+                url: 'images/panorama/negz.jpg',
+                position: [ 0, 0, -512 ],
+                rotation: [ 0, 0, 0 ]
+            }
+        ];
+
+        for ( var i = 0; i < sides.length; i ++ ) {
+            var side = sides[ i ];
+            var element = document.createElement( 'img' );
+            element.width = 1026; // 2 pixels extra to close the gap.
+            element.src = side.url;
+            var object = new THREE.CSS3DObject( element );
+            object.position.fromArray( side.position );
+            object.rotation.fromArray( side.rotation );
+            scene.add( object );
+        }
+
+        renderer = new THREE.CSS3DRenderer();
+        renderer.setSize( window.innerWidth, window.innerHeight );
+        // document.body.appendChild( renderer.domElement );
+        document.getElementById('test').appendChild( renderer.domElement );
+
+        document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+        // document.addEventListener( 'wheel', onDocumentMouseWheel, false );
+        // document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+        // document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+        // window.addEventListener( 'resize', onWindowResize, false );
+    }
+    function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize( window.innerWidth, window.innerHeight );
+    }
+    function onDocumentMouseDown( event ) {
+        event.preventDefault();
+        document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+        document.addEventListener( 'mouseup', onDocumentMouseUp, false );
+    }
+    function onDocumentMouseMove( event ) {
+        var movementX = event.movementX || event.mozMovementX || event.webkitMovementX || 0;
+        var movementY = event.movementY || event.mozMovementY || event.webkitMovementY || 0;
+        lon -= movementX * 0.1;
+        lat += movementY * 0.1;
+    }
+    function onDocumentMouseUp( event ) {
+        document.removeEventListener( 'mousemove', onDocumentMouseMove );
+        document.removeEventListener( 'mouseup', onDocumentMouseUp );
+    }
+    function onDocumentMouseWheel( event ) {
+        var fov = camera.fov + event.deltaY * 0.05;
+        camera.fov = THREE.Math.clamp( fov, 10, 75 );
+        camera.updateProjectionMatrix();
+    }
+    function onDocumentTouchStart( event ) {
+        event.preventDefault();
+        var touch = event.touches[ 0 ];
+        touchX = touch.screenX;
+        touchY = touch.screenY;
+    }
+    function onDocumentTouchMove( event ) {
+        event.preventDefault();
+        var touch = event.touches[ 0 ];
+        lon -= ( touch.screenX - touchX ) * 0.1;
+        lat += ( touch.screenY - touchY ) * 0.1;
+        touchX = touch.screenX;
+        touchY = touch.screenY;
+    }
+    function animate() {
+        requestAnimationFrame( animate );
+        lon +=  0.1;
+        lat = Math.max( - 85, Math.min( 85, lat ) );
+        phi = THREE.Math.degToRad( 90 - lat );
+        theta = THREE.Math.degToRad( lon );
+        target.x = Math.sin( phi ) * Math.cos( theta );
+        target.y = Math.cos( phi );
+        target.z = Math.sin( phi ) * Math.sin( theta );
+        camera.lookAt( target );
+        renderer.render( scene, camera );
+    }
+
+
+</script>
 
 <!-- Include modernizr-2.8.3.min.js -->
 <script src="assets/js/modernizr-2.8.3.min.js"></script>
