@@ -117,18 +117,12 @@
 .da-thumbs li a div span {
 
     display: block;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
 
-    text-transform: uppercase;
-    font-weight: normal;
+    margin-left: -60px;
+    margin-top: 20px;
     color: rgba(255, 255, 255, 0.9);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    border-bottom: 10px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
+    font-family: '方正清刻本悦宋简体';
+    font-size: 40px;
 }
 
 .dropbtn {
