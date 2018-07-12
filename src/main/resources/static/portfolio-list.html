@@ -1219,6 +1219,7 @@
             }
     }    </script>
 <script>
+
     $(function () {
 
         $(' #da-thumbs > li ').each(function () {
@@ -1238,7 +1239,11 @@
             else {
                 var con = document.getElementsByTagName("li");
                 for (var i = 0; i < con.length; i++) {
-                    con[i].style = "margin:10px 1%";
+                    var text = con[i].getAttribute("data-category");
+
+                    if (text !=null) {
+                        con[i].style = "margin:10px 1%";
+                    }
                 }
             }
 
@@ -1246,6 +1251,7 @@
 
 
     });
+
 </script>
 <script>
     var elements = document.querySelectorAll('.demo-image');
