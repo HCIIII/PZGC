@@ -9,8 +9,9 @@ body a{
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
-	font-weight:400;
-	font-family: 'Varela Round', sans-serif;
+	font-size: 33px;
+	color: black;
+	font-family: 方正清刻本悦宋简体, 微软雅黑, "Heiti SC", 黑体, Arial, serif;
 }
 input[type="button"],input[type="submit"]{
 	transition:0.5s all;
