@@ -736,7 +736,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .entry-title {
-    color: #6f7678;
+    color: black;
     font-size: 1.5em;
     font-weight: 700;
     font-family: '方正清刻本悦宋简体', 微软雅黑, 'Heiti SC', 黑体, Arial, serif;
@@ -745,7 +745,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .entry-title a {
-    color: #6f7678;
+    color: black;
 }
 
 .entry-title a:hover {
