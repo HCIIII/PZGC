@@ -91,8 +91,8 @@
                 <div class="col-md-6 col-md-offset-3 text-center" style="padding: 40px 0;">
                     <div class="success-info">
                         <div class="tip">
-                            提交成功</div>
-                        <div class="text">恭喜您！您的反馈已提交成功，非常感谢您的意见与建议。</div>
+                            您的想法或建议我们已经收到啦！</div>
+                        <div class="text">我们会第一时间去了解您的想法并给您回复，谢谢！</div>
                     </div>
                 </div>
             </div><!-- /.container -->
@@ -127,63 +127,6 @@
 
 <script type="text/javascript" src="assets/js/jquery.ajaxchimp.min.js"></script>
 
-
-<script>
-
-    $(document).ready(function () {
-
-        /* -------- One page Navigation ----------*/
-        $('#main-menu #menu').onePageNav({
-            currentClass: 'active',
-            changeHash: false,
-            scrollSpeed: 1500,
-            scrollThreshold: 0.5,
-            scrollOffset: 95,
-            filter: ':not(.sub-menu a, .not-in-home)',
-            easing: 'swing'
-        });
-
-
-        /*----------- Google Map - with support of gmaps.js ----------------*/
-
-        function isMobile() {
-            return ('ontouchstart' in document.documentElement);
-        }
-
-        function init_gmap() {
-            if (typeof google == 'undefined') return;
-            var options = {
-                center: [-37.817331, 144.955652],
-                zoom: 15,
-                mapTypeControl: true,
-                mapTypeControlOptions: {
-                    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-                },
-                navigationControl: true,
-                scrollwheel: false,
-                streetViewControl: true
-            }
-
-            if (isMobile()) {
-                options.draggable = false;
-            }
-
-            $('#googleMaps').gmap3({
-                map: {
-                    options: options
-                },
-                marker: {
-                    latLng: [-37.817331, 144.955652],
-                    options: {icon: 'images/mapicon.png'}
-                }
-            });
-        }
-
-        init_gmap();
-    });
-
-
-</script>
 
 </body>
 </html>
