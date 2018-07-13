@@ -76,7 +76,7 @@ header {
     text-align:center;
     font:16px "microsoft yahei";
     list-style-type:none;
-    margin: 2px 7px;
+    margin: 0 7px;
     font-weight:200;
 
 }
@@ -96,11 +96,14 @@ header {
     background: #B46381;
     color: antiquewhite;
     font-size: 14px;
+    z-index: 999;
 }
 
 .search input, .search button {
     outline: none;
     background: transparent;
+    z-index: 999;
+
 }
 
 .search input {
@@ -113,6 +116,8 @@ header {
     position: absolute;
     right: 0;
     bottom: 6px;
+    z-index: 999;
+
 }
 
 .search button {
@@ -123,6 +128,8 @@ header {
     bottom: 0;
     right: 0;
     cursor: pointer;
+    z-index: 999;
+
 }
 
 .search button:before {
@@ -130,16 +137,21 @@ header {
     font-family: FontAwesome;
     font-size: 16px;
     color: antiquewhite;
+    z-index: 999;
+
 }
 
 .search input:focus {
     border-color: antiquewhite;
     transition: 1s;
+    z-index: 999;
+
 }
 
 
 input::-webkit-input-placeholder {
     color: #ddd;
+
 }
 
 input:-ms-input-placeholder { // IE10+
